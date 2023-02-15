@@ -2,7 +2,7 @@ var async = require('async');
 var client = null;
 var app = null;
 var testAccounts = null;
-var config = require('../config/environment');
+var dbConfig = require('../config/db.js');
 var assert = require('assert');
 
 const MongoClient = require('mongodb').MongoClient;
@@ -11,7 +11,8 @@ var reader_db = null;
 
 setupTasksArray = [
     function connectDB(callback) {
-        MongoClient.connect(config.mongo.uri, { useNewUrlParser: true }, function(err, client) {
+        MongoClient.connect(dbConfig.url, { useNewUrlParser: true }, function(err, client) {
+            console.log('made it');
             assert.equal(null, err);
             reader_db_client = client;
             reader_db = reader_db_client.db(config.mongo.db);

@@ -12,11 +12,11 @@ var morgan = require('morgan');
 app.use(morgan);
 app.use(stormpath.init(app, {
     apiKeyFile : './config/stormpath_apikey.properties',
-    application : 'YOUR SP APPLICATION URL', 
+    application : '', 
     secretKey : security.stormpath_secret_key
 }));
 
-var port = 8000;
+var port = 27107;
 mongoose.connect(db.url);
 app.use(bodyParser.urlencoded({extended : true}));
 routes.addAPIRouter(app, mongoose, stormpath);

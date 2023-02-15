@@ -1,10 +1,10 @@
-U1_NAME = "Test User1";
+TU1_NAME = "Test User1";
 TU1_EMAIL = "testuser1@example.com";
 TU1_PW = "testUser123";
 
 var frisby = require('frisby');
-var config = require('../config/environment');
-var uri = config.test.apiServerURI;
+var config = require('./test_config.js');
+var uri = config.url;
 
 frisby.create('POST missing name')
     .post(uri + '/user/enroll',
