@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "63c7419782b6ef296c02b928"
+  },
+  "name": "Aaron Rodgers",
+  "position": "QB",
+  "passingYards": 3695,
+  "passingTouchdowns": 28,
+  "rushingYards": 94,
+  "rushingTouchdowns": 1
+},{
+  "_id": {
+    "$oid": "63c741a482b6ef296c02b92a"
+  },
+  "name": "Jordan Love",
+  "position": "QB",
+  "passingYards": 195,
+  "passingTouchdowns": 1,
+  "rushingYards": -1,
+  "rushingTouchdowns": 0
+},{
+  "_id": {
+    "$oid": "63c741b282b6ef296c02b92c"
+  },
+  "name": "Aaron Jones",
+  "position": "RB",
+  "rushingYards": 1121,
+  "rushingTouchdowns": 2
+},{
+  "_id": {
+    "$oid": "63c741c482b6ef296c02b92e"
+  },
+  "name": "Aj Dillon",
+  "position": "RB",
+  "rushingYards": 770,
+  "rushingTouchdowns": 7
+},{
+  "_id": {
+    "$oid": "63c741d082b6ef296c02b930"
+  },
+  "name": "Patrick Taylor",
+  "position": "RB",
+  "rushingYards": 31,
+  "rushingTouchdowns": 0
+},{
+  "_id": {
+    "$oid": "63c741db82b6ef296c02b932"
+  },
+  "name": "Kylin Hill",
+  "position": "RB",
+  "rushingYards": 7,
+  "rushingTouchdowns": 0
+},{
+  "_id": {
+    "$oid": "63c741e582b6ef296c02b934"
+  },
+  "name": "Christian Waston",
+  "position": "WR",
+  "rushingYards": 80,
+  "rushingTouchdowns": 2,
+  "recievingYards": 611,
+  "recievingTouchdowns": 7
+},{
+  "_id": {
+    "$oid": "63c741f182b6ef296c02b936"
+  },
+  "name": "Allen Lazzard",
+  "position": "WR",
+  "rushingYards": 0,
+  "rushingTouchdowns": 0,
+  "recievingYards": 788,
+  "recievingTouchdowns": 6
+},{
+  "_id": {
+    "$oid": "63c741fb82b6ef296c02b938"
+  },
+  "name": "Romeo Doubs",
+  "position": "WR",
+  "rushingYards": 11,
+  "rushingTouchdowns": 0,
+  "recievingYards": 425,
+  "recievingTouchdowns": 3
+},{
+  "_id": {
+    "$oid": "63c7420582b6ef296c02b93a"
+  },
+  "name": "Sammy Watkins",
+  "position": "WR",
+  "recievingYards": 206,
+  "recievingTouchdowns": 0
+},{
+  "_id": {
+    "$oid": "63c7420e82b6ef296c02b93c"
+  },
+  "name": "Randall Cobb",
+  "position": "WR",
+  "recievingYards": 417,
+  "recievingTouchdowns": 1
+},{
+  "_id": {
+    "$oid": "63c7421882b6ef296c02b93e"
+  },
+  "name": "Juwann Winfree",
+  "position": "WR",
+  "recievingYards": 17,
+  "recievingTouchdowns": 0
+},{
+  "_id": {
+    "$oid": "63c7422382b6ef296c02b940"
+  },
+  "name": "Samouri Toure",
+  "position": "WR",
+  "recievingYards": 82,
+  "recievingTouchdowns": 1
+},{
+  "_id": {
+    "$oid": "63c7422b82b6ef296c02b942"
+  },
+  "name": "Tyler Davis",
+  "position": "TE",
+  "recievingYards": 26,
+  "recievingTouchdowns": 0
+}]
