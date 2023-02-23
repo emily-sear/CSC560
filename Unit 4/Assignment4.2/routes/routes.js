@@ -66,3 +66,72 @@ router.delete('/delete/:id',  async (req, res) => {
         res.status(400).json({ message: error.message })
     }
 })
+
+// get player with most amount of passing touchdowns
+router.get('/get/mostPassingTouchdowns', async (req, res) => {
+    try {
+        const data = await Model.find().sort([['passingTouchdowns', -1]]).limit(1);
+        res.json(data);
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
+
+// get player with most amount of rushing yards
+router.get('/get/mostRushingYards', async (req, res) => {
+    try {
+        const data = await Model.find().sort([['rushingYards', -1]]).limit(1);
+        res.json(data);
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
+
+// get player with least amount of rushing yards
+router.get('/get/leastRushingYards', async (req, res) => {
+    try {
+        const data = await Model.aggregate([
+            {
+                "$match": {
+                "rushingYards" : {"$exists": true}
+            }
+        },
+            {
+                "$sort" : { "rushingYards" : 1}
+            }
+        ]).limit(1)
+        res.json(data);
+    } catch (error) {
+        res.status(400).json({ message: error.message })
+    }
+})
+
+// players iwth most to least recieving yards 
+router.get('/get/mostToLeastRecievingYards', async (req, res) => {
+    try {
+        const data = await Model.aggregate(
+        [
+            {
+                "$match": {
+                "recievingYards" : {"$exists": true}
+            }
+        },
+            {
+                "$sort" : { "recievingYards" : -1}
+            }]
+        )
+        res.json(data);
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
+
+// gets player with most amount of rushing yards 
+router.get('/get/mostRushingYards', async (req, res) => {
+    try {
+        const data = await Model.find().sort([['rushingYards', -1]]).limit(1);
+        res.json(data);
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
