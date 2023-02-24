@@ -125,13 +125,3 @@ router.get('/get/mostToLeastRecievingYards', async (req, res) => {
         res.status(400).json({message: error.message})
     }
 })
-
-// gets player with most amount of rushing yards 
-router.get('/get/mostRushingYards', async (req, res) => {
-    try {
-        const data = await Model.find().sort([['rushingYards', -1]]).limit(1);
-        res.json(data);
-    } catch (error) {
-        res.status(400).json({message: error.message})
-    }
-})

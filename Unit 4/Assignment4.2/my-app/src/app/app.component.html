@@ -1,13 +1,13 @@
 <div>CSC 560</div>
 <div>Emily Sear</div>
-<div>Assignment 4.2 </div>
+<div>23 February</div>
+
 <br/><br/>
 
-<button type="button" (click)="allPlayersClick()">All players</button><div></div><br/>
-<button type="button" (click)="mostAmtTouchdownPassesClick()">Most amount of touchdown passes</button><div></div><br/>
-<button type="button" (click)="mostAmtOfRushingYardsClick()">Most rushing yards</button><div></div><br/>
-<button type="button" (click)="leastAmtOfRushingYardsClick()">Least rushing yards</button><div></div><br/>
-<button type="button" (click)="playersMostToLeastRecievingYardsClick()">Sorted most to least recieving yards</button><div></div><br/>
-<button type="button" (click)="mostAmtRushingYard()">Most rushing yards</button><div></div><br/>
-
+<button type="button" (click)="allPlayersClicked()">All Players</button><div *ngIf="allPlayers != ''">{{ allPlayers }}</div><br/>
+<button type="button" (click)="mostPassingTouchdownsClicked()">Player with most amount of passing touchdowns</button><div *ngIf="mostPassingTouchdowns
+!= ''">{{mostPassingTouchdowns }}</div><br/>
+<button type="button" (click)="mostRushingYardsClicked()">Player with most amount of rushing yards</button><div *ngIf="mostRushingYards != ''">{{ mostRushingYards }}</div><br/>
+<button type="button" (click)="leastRushingYardsClicked()">Player with least amount of rushing yards</button><div *ngIf="leastRushingYards != ''">{{ leastRushingYards }}</div><br/>
+<button type="button" (click)="mostToLeastRecievingYardsClicked()">Most to least recieving yards</button><div *ngIf="mostToLeastRecievingYards">{{ mostToLeastRecievingYards}}</div><br/>
 <router-outlet></router-outlet>
