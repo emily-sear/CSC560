@@ -1,0 +1,58 @@
+[{
+    "name" : "Market Bag", 
+    "yarnWeight" : "medium",
+    "hookSize" : "5mm",
+    "amtOfYarn" : "150 yards",
+    "amtOfTime" : "3 hours"
+},
+{
+    "name" : "Blanket", 
+    "yarnWeight" : "chunky",
+    "hookSize" : "9mm",
+    "amtOfYarn": "2000 yards",
+    "stitchType": "Half double crochet",
+    "rows": 100,
+    "amtOfTime": "30 hours"
+},
+{
+    "name" : "Bear", 
+    "yarnWeight" : "chunky",
+    "hookSize" : "10mm",
+    "amtOfYarn": "200 yards",
+    "amtOfTime": "10 hours"
+},
+{
+    "name" : "Socks", 
+    "yarnWeight" : "lace",
+    "hookSize" : "2mm",
+    "amtOfYarn": "500 yards",
+    "rows": 200,
+    "amtOfTime": "15 hours"
+},
+{
+    "name" : "Gloves", 
+    "yarnWeight" : "medium",
+    "hookSize" : "4.5mm",
+    "amtOfYarn": "450 yards",
+    "stitchType": "Half double crochet",
+    "rows": 60,
+    "amtOfTime": "21 hours"
+},
+{
+    "name" : "Sweater", 
+    "yarnWeight" : "medium",
+    "hookSize" : "6mm",
+    "amtOfYarn": "2000 yards",
+    "stitchType": "Half double crochet",
+    "rows": 90,
+    "amtOfTime": "45 hours"
+},
+{
+    "name" : "Chunky Sweater", 
+    "yarnWeight" : "chunky",
+    "hookSize" : "9mm",
+    "amtOfYarn": "1000 yards",
+    "stitchType": "Half double crochet clam",
+    "rows": 50,
+    "amtOfTime": "28 hours"
+}]
