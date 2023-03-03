@@ -1,13 +1,15 @@
+
 <div>CSC 560</div>
 <div>Emily Sear</div>
-<div>23 February</div>
+<div>2 March</div>
+<div>Assignment 4.3</div> 
 
 <br/><br/>
 
-<button type="button" (click)="allPlayersClicked()">All Players</button><div *ngIf="allPlayers != ''">{{ allPlayers }}</div><br/>
-<button type="button" (click)="mostPassingTouchdownsClicked()">Player with most amount of passing touchdowns</button><div *ngIf="mostPassingTouchdowns
-!= ''">{{mostPassingTouchdowns }}</div><br/>
-<button type="button" (click)="mostRushingYardsClicked()">Player with most amount of rushing yards</button><div *ngIf="mostRushingYards != ''">{{ mostRushingYards }}</div><br/>
-<button type="button" (click)="leastRushingYardsClicked()">Player with least amount of rushing yards</button><div *ngIf="leastRushingYards != ''">{{ leastRushingYards }}</div><br/>
-<button type="button" (click)="mostToLeastRecievingYardsClicked()">Most to least recieving yards</button><div *ngIf="mostToLeastRecievingYards">{{ mostToLeastRecievingYards}}</div><br/>
+
+<button type="button" (click)="getAllCrochetPatterns()">Get all names of crochet patterns</button><br/><br/>
+<label for="idInput">ID to get specific crochet pattern: </label>
+<input type="text" id="idInput"> <br/>
+<button type="button" (click)="getSingleCrochetPattern()">Get pattern given above id </button>
+<div *ngIf="singleCrochetPattern != ''">{{ singleCrochetPattern }}</div>
 <router-outlet></router-outlet>
